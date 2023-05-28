@@ -15,7 +15,7 @@ export default function Projects() {
       title: "Delivery App",
       description: "Delivery de alimentos é um serviço que permite ao cliente receber o produto em casa, no trabalho ou onde estiver, sem precisar ir até o estabelecimento.",
       image: delivery,
-      link: "https://github.com/betortizPSG/todo-list",
+      link: "https://github.com/betortizPSG/food-commerce",
       colSpan: "col-span-1",
       // colSpan: "col-span-1 md:col-span-2",
     },
