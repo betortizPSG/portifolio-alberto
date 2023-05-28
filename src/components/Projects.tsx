@@ -1,6 +1,7 @@
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2';
 import search2 from '../assets/search2.png';
 import delivery from '../assets/delivery1.jpg';
+import chat from '../assets/chat3.png';
 
 export default function Projects() {
   const projects = [
@@ -13,13 +14,20 @@ export default function Projects() {
       colSpan: 'col-span-1',
     },
     {
+      title: 'Chat Cripto',
+      description:
+        'Chat criptografado(frontend) com a possibilidade de enviar mensagens de texto e imagens.',
+      image: chat,
+      link: 'https://github.com/betortizPSG/chat-cripto',
+      colSpan: 'col-span-1',
+    },
+    {
       title: 'Delivery App',
       description:
         'Delivery de alimentos é um serviço que permite ao cliente receber o produto em casa, no trabalho ou onde estiver, sem precisar ir até o estabelecimento.',
       image: delivery,
       link: 'https://github.com/betortizPSG/food-commerce',
-      colSpan: 'col-span-1',
-      // colSpan: "col-span-1 md:col-span-2",
+      colSpan: "col-span-1 md:col-span-2",
     },
   ];
 
@@ -45,14 +53,14 @@ export default function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`group relative m-6 h-52 cursor-default rounded-lg p-6 ${project.colSpan} bg-cover bg-center`}
+                className={`group relative m-4 h-52 cursor-default rounded-lg p-1 ${project.colSpan} bg-cover bg-center`}
                 style={{ backgroundImage: `url('${project.image}')` }}
               >
-                <div className='absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-blue-600 text-white opacity-0 transition-opacity group-hover:opacity-100'>
+                <div className='absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-slate-700 text-white opacity-0 transition-opacity group-hover:opacity-100'>
                   <h4 className='font-headline text-lg font-semibold'>
                     {project.title}
                   </h4>
-                  <p className=' mb-4 p-4 text-sm'>{project.description}</p>
+                  <p className=' mb-1 p-2 text-sm'>{project.description}</p>
                   <a href={project.link} target='_blank'>
                     <HiArrowTopRightOnSquare className='h-10 w-10' />
                   </a>
