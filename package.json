@@ -6,7 +6,7 @@
   "homepage": "https://felipefontoura.github.io/react-portfolio/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r git@github.com:felipefontoura/react-portfolio.git",
+    "deploy": "gh-pages -d dist -r https://github.com/betortizPSG/portifolio-alberto.git",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
